@@ -7,3 +7,7 @@ System consist of :
 
 Mysql :
 $conn = new mysqli($servername, $username, $password,$dbname); //in invoice.php file mysql connection is declared
+
+* Database folder is provided in invoice folder
+-invoice_order
+-invoice_order_item
