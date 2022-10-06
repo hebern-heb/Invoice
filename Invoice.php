@@ -8,7 +8,7 @@ class Invoice{
 
     public function __construct(){
         if(!$this->dbConnect){ 
-            $conn =  new mysqli('localhost', 'usernam', 'password', 'dbname');
+            $conn =  new mysqli('localhost', 'username', 'password', 'dbname');
 
             if($conn->connect_error){
                 die("Error failed to connect to MySQL: " . $conn->connect_error);
