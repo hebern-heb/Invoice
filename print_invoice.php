@@ -1,12 +1,11 @@
 <?php
 include 'Invoice.php';
 $invoice = new Invoice();
-if(!empty($_GET['invoice_id']) && $_GET['invoice_id']) {
-	echo $_GET['invoice_id'];
+if(!empty($_GET['invoice_id'])) {
 	$invoiceValues = $invoice->getInvoice($_GET['invoice_id']);		
 	$invoiceItems = $invoice->getInvoiceItems($_GET['invoice_id']);		
 }
-$invoiceDate = date("d-M-Y, H:i a", strtotime($invoiceValues['order_date']));
+$invoiceDate = date("d-M-Y", strtotime($invoiceValues['order_date']));
 $output = '';
 $output .= '<table width="100%" border="1" cellpadding="5" cellspacing="0">
 	<tr>
