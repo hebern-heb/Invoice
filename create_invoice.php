@@ -3,7 +3,7 @@
 include('inc/header.php');
 include 'Invoice.php';
 $invoice = new Invoice();
-if(!empty($_POST['companyName']) && $_POST['companyName']) {	
+if(!empty($_POST['companyName'])) {	
 	$invoice_id= $invoice->saveInvoice($_POST);
 
 	header("Location:index.php");	
