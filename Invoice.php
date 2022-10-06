@@ -1,15 +1,14 @@
 <?php
 class Invoice{
   
-	private $invoiceUserTable = 'invoice_user';	
-    private $invoiceOrderTable = 'invoice_order';
+	private $invoiceOrderTable = 'invoice_order';
 	private $invoiceOrderItemTable = 'invoice_order_item';
 	private $dbConnect = false;
 
 
     public function __construct(){
         if(!$this->dbConnect){ 
-            $conn =  new mysqli('localhost', 'admin_mlms_test', 'hNqPD6llt9', 'admin_mlms_test22');
+            $conn =  new mysqli('localhost', 'usernam', 'password', 'dbname');
 
             if($conn->connect_error){
                 die("Error failed to connect to MySQL: " . $conn->connect_error);
