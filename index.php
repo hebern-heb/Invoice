@@ -27,7 +27,7 @@ $invoice = new Invoice();
 		$invoiceList = $invoice->getInvoiceList();
 		$i=1;
         foreach($invoiceList as $invoiceDetails){
-			$invoiceDate = date("d-M-0Y, H:i", strtotime($invoiceDetails["order_date"]));
+			$invoiceDate = date("d-M-Y", strtotime($invoiceDetails["order_date"]));
             echo '
               <tr>
                 <td scope="row">'.$i.'</td>
