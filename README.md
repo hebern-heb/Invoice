@@ -1,5 +1,6 @@
 # Invoice-Generation
 
+Url - http://Invoice/
 System consist of :
 * Invoice list (list of invoices with print option)
 * Create invoice option (create invoice from here & save details by entering customer name & item details)
